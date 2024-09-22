@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+:root {
+    --heading-font: 'Oswald', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --background: #65655E;
+    --border: #EF6F6C;
+    --font: #FBFFF1;
+    --navigation: #00A5CF;
+    --accent: #3D52D5;
+}
+
+* {
+	margin: auto;
+	padding: 0;
+}
+
+body {
+    color: var(--font);
+    background-color: var(--background);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    background-color: var(--accent);
+    font-family: var(--heading-font);
+}
+
+
+
+#profile {
+    max-width: 15%;
+    box-shadow: 10px 10px 15px darkblue;
+    margin: 15px;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--navigation);
+}
+
+#menu::before {
+    content: "≡";
+    color: var(--font);
+}
+
+.navigation {
+    background-color: var(--navigation);
+    color: var(--font);
+}
+
+.navigation li {
+    display: none;
+}
+
+li a {
+    color: var(--font);
+}
+
+nav a:hover, .navigation a:active {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: var(--border);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.cards {
+    max-width: 950px;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+}
+
+section ul {
+    padding: 15px;
+    margin: 5px;
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.course {
+    align-content: center;
+    background-color: var(--font);
+    margin: 5px auto;
+    padding: 15px;
+    min-width: 30%;
+    border-radius: 25px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.completed {
+    background-color: var(--navigation);
+    color: var(--font);
+}
+
+.card {
+    padding: 15px;
+    max-width: 100%;
+    width: auto;
+    align-content: center;
+    background-color: var(--font);
+    margin-top: 10px;
+    border-radius: 25px;
+    color: var(--accent);
+    border: 4px solid var(--accent);
+}
+
+section img {
+    max-width: 50%;
+}
+
+footer {
+    background: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (min-width: 550px) {
+    .navigation {
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #work {
+        grid-column: 1 / 2;
+        min-height: 15rem;
+        align-content: normal;
+    }
+
+    #location {
+        grid-column: 2 / 3;
+        min-height: 15rem;
+    }
+
+    #certificate {
+        grid-column: 1 / 3;
+    }
+
+    #courses {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 1rem;
+    }
+}
