@@ -109,7 +109,7 @@ section ul {
 }
 
 .completed {
-    background-color: var(--navigation);
+    background-color: #177FA2;
     color: var(--font);
 }
 
