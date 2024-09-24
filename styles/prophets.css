@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+:root {
+    --heading-font: 'Oswald', serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --background: #65655E;
+    --border: #EF6F6C;
+    --font: #FBFFF1;
+    --navigation: #007FA7;
+    --accent: #3D52D5;
+}
+
+body {
+    background-color: var(--background);
+}
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+header, footer {
+    border-bottom: 10px solid var(--border);
+    margin: 0;
+    text-align: center;   
+    background-color: var(--navigation); 
+    color: var(--font);
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--navigation);
+}
+
+#menu::before {
+    content: "≡";
+    color: var(--font);
+}
+
+.navigation {
+    background-color: var(--navigation);
+    color: var(--font);
+}
+
+.navigation li {
+    display: none;
+}
+
+li a {
+    color: var(--font);
+}
+
+nav a:hover, .navigation a:active {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: var(--border);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+h1 {
+    font-size: 45px;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-family: var(--heading-font);
+    color: var(--font);
+}
+
+p {
+    font-size: (16px);
+    font-family: (var(--paragraph-font));
+    color: var(--font);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: var(--accent);
+    border: 5px solid var(--border);
+    border-radius: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+width: auto;
+    max-width: 325px;
+box-shadow: 0 0 30px #777;
+height: 200px;
+border: 1px solid #333;
+}
+
+@media (min-width: 550px) {
+    .navigation {
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
