@@ -1,10 +1,10 @@
-const mainnav = document.querySelector(".navigation");
-const hambutton = document.querySelector("#menu");
+const mainnav = document.querySelector(".animateMe");
+const hambutton = document.querySelector("#myButton");
 
 
 hambutton.addEventListener("click", () => {
-    mainnav.classList.toggle("show");
-    hambutton.classList.toggle("show");
+    mainnav.classList.toggle("open");
+    hambutton.classList.toggle("open");
 });
 
 const modificationDate = document.querySelector("#lastmodified");
@@ -118,9 +118,13 @@ wdd.addEventListener("click", () => {
 
 function displayCard(coursesfiltered) {
     document.getElementById("courses").innerHTML = ""
+
+    // create running credit total
+    let credits = 0;
+
     coursesfiltered.forEach(course => {
-        const courseCard = document.createElement("section")
-        courseCard.innerHTML = `${course.subject} ${course.number} - ${course.credits} credits`;
+        const courseCard = document.createElement("section");
+        courseCard.innerHTML = `${course.subject} ${course.number}`;
 
         document.getElementById("courses").appendChild(courseCard);
 
@@ -130,6 +134,11 @@ function displayCard(coursesfiltered) {
         if (course.completed == true) {
             courseCard.classList.add("completed");
         }
+
+        credits += course.credits;
+
+    // Display the total credits
+    document.getElementById("credits").innerHTML = `Total Credits: ${credits}`;
 });
 }
 

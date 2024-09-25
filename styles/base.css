@@ -23,20 +23,58 @@ body {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 78px auto 44px;
+    align-items: end;
     background-color: var(--accent);
     font-family: var(--heading-font);
 }
 
-
-
 #profile {
-    max-width: 15%;
+    /* max-width: 15%; */
     box-shadow: 10px 10px 15px darkblue;
     margin: 15px;
 }
 
-#menu {
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--font);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "x"
+}
+
+a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: var(--border);
+}
+
+ul.navigation li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--font);
+    text-decoration: none;
+    /* background-color: var(--navigation); */
+}
+
+nav.animateMe.open li.active a{
+    background-color: rgba(0, 0, 139, .2);
+}
+
+/* #menu {
     display: block;
     text-decoration: none;
     padding: .5rem .75rem;
@@ -44,40 +82,55 @@ header {
 }
 
 #menu::before {
-    content: "≡";
-    color: var(--font);
-}
+    /* content: "≡"; */
+    /* color: var(--font);
+} */ 
 
-.navigation {
-    background-color: var(--navigation);
-    color: var(--font);
-}
 
-.navigation li {
+/* ul.mainnav {
     display: none;
+} */
+
+ul.navigation {
+    list-style-type: none;
+}
+
+nav.animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.animateMe ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
 }
 
 li a {
     color: var(--font);
 }
 
-nav a:hover, .navigation a:active {
-	font-weight: 700;
-	text-decoration: underline;
-	text-decoration-color: var(--border);
-}
 
-.show li {
+/* .show li {
     display: block;
-}
+} */
 
-#menu.show::before {
+/* #menu.show::before {
     content: "X";
-}
+} */
 
 
 h2 {
     padding-bottom: 10px;
+}
+
+ul.cert li a {
+    border-radius: 25px 25px;
+    margin: 5px;
+    background-color: var(--navigation);
 }
 
 .cards {
@@ -124,9 +177,9 @@ section ul {
     color: var(--accent);
 }
 
-.active::before {
+/* .active::before {
 	content: "📍"; 
-}
+} */
 
 section img {
     max-width: 50%;
@@ -141,10 +194,18 @@ footer {
 }
 
 @media (min-width: 550px) {
-    .navigation {
+    .navigation, ul.open {
         display: flex;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+
+    li.active a{
+        background-color: rgba(0, 0, 139, .2);
+    }
+
+    #myButton {
+        display: none;
     }
 
     .navigation li {
@@ -156,8 +217,8 @@ footer {
         text-align: center;
     }
 
-    #menu {
-        display: none;
+    nav.animateMe {
+        grid-template-rows: 1fr;
     }
 
     .cards {

@@ -31,20 +31,18 @@
 </head>
 <body>
     <header>
-        <div id="name-image">
-            <h1>Jace T. Bright</h1>
-            <img src="images/jace.jpg" alt="image of Jace Bright, smiling" id="profile">
-            <a id="menu" href="#"></a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" title="Home" class="active">Home</a></li>
+        <img src="images/jace.jpg" alt="image of Jace Bright, smiling" id="profile" width="70">
+        <h1>Jace T. Bright</h1>
+        <button id="myButton"></button>
+    </header>
+            <nav class="animateMe">
+                <ul class="navigation mainnav">
+                    <li class="active"><a href="#" title="Home">Home</a></li>
                     <li><a href="#" title="Chamber">Chamber</a></li>
                     <li><a href="https://github.com/jacebright" title="GitHub Profile">GitHub Profile</a></li>
                     <li><a href="https://www.linkedin.com/in/jbright-sun" title="LinkedIn">LinkedIn</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
     <main>
         <div class="cards">
             <section id="work" class="card">
@@ -60,9 +58,9 @@
                 <figure><img src="images/peru.jpg" alt="aerial view of Machu Picchu"><figcaption>Machu Picchu</figcaption></figure>
             </section>
             <section id="certificate" class="card">
-                <h2>Web and Computer Programming Certificate</h2>
+                <h2>Web and Computer Programming Certificate <span id="credits"></span></h2>
                 <nav>
-                    <ul class="navigation">
+                    <ul class="navigation cert">
                         <li><a href="#" id="all">All</a></li>
                         <li><a href="#" id="cse">CSE</a></li>
                         <li><a href="#" id="wdd">WDD</a></li>
