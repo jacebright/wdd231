@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC&family=Poppins&display=swap');
+:root {
+    /* CSS HEX */
+    --fire-engine-red: #cf0f1d;
+    --fern-green: rgb(84, 122, 46);
+    --celestial-blue: #49A3EAff;
+    --picton-blue-2: rgb(98, 184, 236);
+    --cadet-gray: rgb(152, 166, 166);
+
+    --header-font: 'Poppins', 'sans serif';
+    --paragraph-font: 'Alice', serif;
+    --extra-font: 'Playfair Display SC', serif;
+}
+
+* {
+    margin: 0;
+}
+
+header, footer {
+    background-color: rgba(152, 166, 166, .6);
+    color: var(--fire-engine-red);
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--header-font);
+}
+
+main {
+    background-color: rgba(98, 184, 236, .6);
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border: .5rem solid var(--fire-engine-red); */
+    /* border-radius: 20px 20px; */
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(84, 122, 46, .8);
+    border-radius: 25px 25px;
+}
