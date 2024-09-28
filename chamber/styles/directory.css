@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC&family=Poppins&display=swap');
 :root {
     /* CSS HEX */
-    --fire-engine-red: #cf0f1d;
+    --fire-engine-red: rgb(207, 15, 29);
     --fern-green: rgb(84, 122, 46);
     --celestial-blue: #49A3EAff;
     --picton-blue-2: rgb(98, 184, 236);
@@ -93,6 +93,32 @@ nav {
 }
 
 
+
+/* Grid/List Toggle Buttons */
+#grid, #list {
+    font-size: 2rem;
+    background: rgba(207, 15, 29, .5);
+    border: 2px solid var(--fern-green);
+    color: var(--font);
+    cursor: pointer;
+    min-width: 75px;
+    width: 35%;
+    text-align: center;
+    padding: .25rem 2vw;
+    margin: .5rem;
+    /* justify-self: center; */
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#grid {
+    justify-self: right;
+}
+
 h1, h2 {
     font-family: var(--header-font);
 }
@@ -116,6 +142,11 @@ p {
     padding: 20px;
     background-color: rgba(84, 122, 46, .8);
     border-radius: 25px 25px;
+    text-align: center;
+}
+
+.card p, .card h2 {
+    padding: 3px;
 }
 
 h2 {
@@ -146,12 +177,39 @@ section {
     align-items: center;
 }
 
-img {
-width: auto;
-    max-width: 325px;
-box-shadow: 0 0 30px #777;
-height: 200px;
-border: 1px solid #333;
+#cards img {
+    width: auto;
+    max-width: 300px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
+
+table, tr, td {
+    border: 2px solid var(--cadet-gray);
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    justify-self: center;
+}
+
+tr {
+    height: 44px;
+    color: black
+}
+
+.Member {
+    background-color: rgba(205, 127, 50, .6); 
+}
+
+.Silver {
+    background-color: rgba(192, 192, 192, .6);
+}
+
+.Gold {
+    background-color: rgba(255, 215, 0, .6);
 }
 
 footer {

@@ -3,12 +3,8 @@ const url = 'data/members.json';
 const cards = document.querySelector('#cards');
 
 // create the event listener variables
-const all = document.getElementById("all");
-const utah = document.getElementById("utah");
-const birth = document.getElementById("birth");
-const age = document.getElementById("age");
-const children = document.getElementById("children");
-const service = document.getElementById("service");
+const grid = document.getElementById("grid");
+const list = document.getElementById("list");
 
 
 async function getBusinessData(url) {
@@ -17,13 +13,13 @@ async function getBusinessData(url) {
 
     const businesses = data.businesses;
     // console.table(data);
-    displayBusinesses(businesses)
+    displayBusinessesGrid(businesses)
     
-    // all.addEventListener("click", () => displayBusinesses(businesses));
-    // utah.addEventListener("click", () => displayBusinesses(businesses.filter(business => business.birthplace == "Utah")));
+    grid.addEventListener("click", () => displayBusinessesGrid(businesses));
+    list.addEventListener("click", () => displayBusinessesList(businesses));
 }
 
-const displayBusinesses = (businesses) => {
+const displayBusinessesGrid = (businesses) => {
     document.getElementById('cards').innerHTML = ""
     businesses.forEach((business) => {
         let card = document.createElement("section");
@@ -57,7 +53,7 @@ const displayBusinesses = (businesses) => {
         photo.setAttribute("alt", `photo of ${business.name}`);
         photo.setAttribute("loading", "lazy");
         photo.setAttribute("width", '340');
-        photo.setAttribute("height", '440');
+        // photo.setAttribute("height", '440');
 
         card.appendChild(name);
         card.appendChild(photo);
@@ -66,8 +62,43 @@ const displayBusinesses = (businesses) => {
         card.appendChild(website);
         card.appendChild(membership);
 
+        card.classList.add("card");
+
         cards.appendChild(card);
     });
+}
+
+function displayBusinessesList(businesses) {
+    document.getElementById('cards').innerHTML = ""
+    let table = document.createElement("table");
+    let body = document.createElement("tbody");
+
+    businesses.forEach((business) => {
+        let card = document.createElement("tr");
+        let name = document.createElement("td");
+
+        name.innerHTML = business.name;
+
+        // Determine the membership level
+        let level = "Member";
+        if (business.membership == 1) {
+            level = "Member";
+        }
+        else if (business.membership == 2) {
+            level = "Silver";
+        }
+        else if (business.membership == 3) {
+            level = "Gold";
+        }
+
+        name.classList.add(`${level}`);
+
+        card.appendChild(name);
+        
+        body.appendChild(card);
+    });
+    table.appendChild(body);
+    cards.appendChild(table);
 }
 
 getBusinessData(url);
