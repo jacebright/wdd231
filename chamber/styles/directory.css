@@ -137,6 +137,13 @@ p {
     font-family: var(--paragraph-font);
 }
 
+#hero {
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    max-width: 100%;
+}
+
 .card {
     margin: 20px;
     padding: 20px;

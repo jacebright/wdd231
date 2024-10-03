@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jace Bright">
+    <meta name="description" content="Home page for the chamber of commerce project for WDD231, demonstrating web frontend development skills.">
+    <title>Miami Chamber of Commerce Home | WDD231 Jace Bright</title>
+    <link rel="icon" href="images/cactus.ico">
+
+    <!-- links -->
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/home.js" type="module"></script>
+
+    <!-- Open Graph meta data -->
+    <meta property="og:title" content="WDD231 Chamber of Commerce Home Page for Jace Bright">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/mesa-2019/images/Things-to-Do/_1200x630_crop_center-center_82_none/Goldfield-2.jpg?v=1698437029">
+    <meta property="og:url" content="https://jacebright.github.io/wdd231/chamber/index.html">
+    <meta name="og:description" content="Page for WDD 231 - Web Frontend Development I 
+    by Jace Bright. This page contains the Directory for the 
+    Chamber of Commerce website project." />
+
+    <!-- Twitter meta data -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="WDD231 Chamber of Commerce Directory Page for Jace Bright" />
+    <meta name="twitter:image" content="https://s3.us-west-1.amazonaws.com/mesa-2019/images/Things-to-Do/_1200x630_crop_center-center_82_none/Goldfield-2.jpg?v=1698437029" />
+    <meta name="twitter:description" content="Page for WDD 231 - Web Frontend Development I 
+    by Jace Bright. This page contains the Home page information for the 
+    Chamber of Commerce website project." />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/miami-logo.webp" width="100" alt="Miami, AZ Town Logo">
+        <h1>Miami, AZ Chamber of Commerce</h1>
+        <button id="myButton" aria-label="Hamburger Menu"></button>
+    </header>
+    <nav class="animateMe">
+        <ul class="navigation mainnav">
+            <li><a href="#" title="Home">Home</a></li>
+            <li class="active"><a href="#" title="Directory">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img id="hero" src="images/hero.jpg" alt="horizon view of the town of miami with snow-capped mountains in view"> <!--hero image-->
+        <aside id="call">
+            <a></a>
+        </aside>
+        <section id="currentEvents">
+
+        </section>
+        <section id="weather">
+            <p>Current Temperature:     <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="icon"></figcaption>
+                </figure>
+        </section>
+        <section id="spotlights">
+
+        </section>
+    </main>
+    <footer>
+        <div id="contact">
+            <p><strong>Miami Chamber of Commerce</strong></p>
+            <p>500 West Sullivan Street</p>
+            <p>Miami, AZ 85539</p>
+            <p>(928) 555-MCoC (6262)</p>
+        </div>
+        <div id="socials">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook Logo" width="100" loading="lazy">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="Instagram Logo" width="100" loading="lazy">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.webp" alt="Twitter Logo" width="100" loading="lazy">
+            </a>
+        </div>
+        <div id="copyright">
+            <p>©️<span id="currentyear"></span>🌵Jace Bright🌵Texas, USA</p>
+            <p>Last Modification: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
