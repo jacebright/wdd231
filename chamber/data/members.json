@@ -5,7 +5,7 @@
         "address": "716 Sullivan St",
         "phone": "(928) 473-9960",
         "url": "shorturl.at/xRblU",
-        "image": "https://lh3.googleusercontent.com/p/AF1QipMHDERUpJzBQ0iuecm46dywcQcoTUDpdWeWHwi3=s1360-w1360-h1020-rw",
+        "image": "images/guayo.webp",
         "membership": 1
     },
       {
@@ -13,7 +13,7 @@
         "address": "503 Sullivan St",
         "phone": "(928) 200-4913",
         "url": "facebook.com/thelyricsodafountain",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/452136607_881384407369121_6614777054317051541_n.jpg?stp=dst-jpg_s720x720&_nc_cat=100&ccb=1-7&_nc_sid=9eae26&_nc_ohc=mUWg48DZCCsQ7kNvgE_t9A5&_nc_ht=scontent-dfw5-2.xx&_nc_gid=A_257zPfylT5PUWKuu5wmxd&oh=00_AYCQi6AN7G3NlWTSv3ylAZSd9oiadVBcQexHlGEERdRoSg&oe=66FD4E27",
+        "image": "images/lyric.jpg",
         "membership": 2
       },
       {
@@ -21,7 +21,7 @@
         "address": "168 Miami AVe",
         "phone": "(928) 300-8148",
         "url": "pindroptraveltrailers.com",
-        "image": "https://static.wixstatic.com/media/fb8123_14d23a3523b9478f86ad25c3e8ea2698~mv2.jpg/v1/fill/w_1216,h_974,fp_0.50_0.50,q_85,enc_auto/fb8123_14d23a3523b9478f86ad25c3e8ea2698~mv2.jpg",        
+        "image": "images/pindrop.webp",        
         "membership": 2
       },
       {
@@ -29,7 +29,7 @@
         "address": "155 Miami Ave",
         "phone": "(928) 555-1234",
         "url": "miamivintagemercantile.com",
-        "image": "https://i0.wp.com/miamivintagemercantile.com/wp-content/uploads/2023/05/2022-05-20-14.14.06-scaled-e1683838393901.jpg?resize=1024%2C596",        
+        "image": "images/vintage.webp",        
         "membership": 1
       },
       {
@@ -37,7 +37,7 @@
         "address": "150 Plaza Cir",
         "phone": "(928) 473-3700",
         "url": "bullionplazamuseum.org",
-        "image": "https://bullionplazamuseum.org/wp-content/uploads/2022/06/bullion-plaza-school-with-cannon-vintage-photo-tiny.jpg?w=1024",
+        "image": "images/bullion.webp",
         "membership": 3
       },
       {
@@ -45,7 +45,7 @@
         "address": "168 S Water Ave",
         "phone": "(480) 983-0755",
         "url": "ramopps.com",
-        "image": "https://www.ramopps.com/pictures/single-boom-jumbo/main/single-boom-jumbo-for-sale%20(10).jpg",
+        "image": "images/ram.jpg",
         "membership": 3
       },
       {
@@ -53,7 +53,7 @@
         "address": "198 Chisolm Ave",
         "phone": "(928) 473-8144",
         "url": "copperminersrest.com",
-        "image": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/361311934_700999788704590_8053874903380911931_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=yiNbjbgMbjoQ7kNvgG1b7qE&_nc_ht=scontent-dfw5-2.xx&_nc_gid=AsSRUJPsDcWbF_GLvnsWlWO&oh=00_AYCvFBmfTPeTlaX0B1iL2uqwu4O-dRkH61S21IkzYcXR8A&oe=66FD6012",        
+        "image": "images/copper.jpg",        
         "membership": 2
       },
       {
@@ -61,7 +61,7 @@
         "address": "889 Keegan St",
         "phone": "(928) 241-9078",
         "url": "jetcleaning.com",
-        "image": "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/459332814_488468057427839_698605666960928738_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8XLHFpc-2ksQ7kNvgHdpddu&_nc_ht=scontent-dfw5-1.xx&_nc_gid=ARNKLk_s-WBIxbEGssxv11u&oh=00_AYAjqO58m71X5x_imzPUfznO8SwHNa6_vLrOfYZesQy--Q&oe=66FD5E99",
+        "image": "images/jet.jpg",
         "membership": 3
       }
     ]

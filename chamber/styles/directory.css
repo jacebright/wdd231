@@ -220,8 +220,7 @@ tr {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: block;
 }
 
 footer div {
@@ -263,5 +262,10 @@ div a img{
 
     nav.animateMe {
         grid-template-rows: 1fr;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 }
