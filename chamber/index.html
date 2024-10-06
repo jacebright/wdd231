@@ -51,24 +51,37 @@
             <li><a href="#" title="Discover">Discover</a></li>
         </ul>
     </nav>
-    <main>
-        <img id="hero" src="images/hero.jpg" alt="horizon view of the town of miami with snow-capped mountains in view"> <!--hero image-->
-        <aside id="call">
-            <a></a>
-        </aside>
+    <main id="homeMain">
+        <picture id="hero">
+            <source srcset="images/hero.jpg" media="(max-width: 600px)" alt="picture of historical wooden buildings near Miami, AZ" > <!--hero image-->
+            <img src="images/hero-2.jpg" alt="horizon view of the town of miami with snow-capped mountains in view">
+        </picture>
+        <!-- <button id="call"> -->
+        <a href="#" id="call"><strong>Join the Chamber!</strong></a>
+        <!-- </button> -->
         <section id="currentEvents">
-
+            <h2>Upcoming Events:</h2>
+            <ul>
+                <li>Fall Fest @ Lyric Soda Fountain - Oct 20</li>
+                <li>Pumpkin Carving @ Bullion Plaza - Oct 25</li>
+                <li>Trunk or Treat @ Pin Drop Trailers - Oct 30</li>
+            </ul>
         </section>
         <section id="weather">
+            <h2>Current Weather:</h2>
             <p>Current Temperature:     <span id="current-temp"></span></p>
                 <figure>
                     <img id="weather-icon" src="" alt="">
                     <figcaption id="icon"></figcaption>
                 </figure>
         </section>
-        <section id="spotlights">
-
+        <section id="forecast">
+            <h2>3 Day Forecast:</h2>
+            <h3>Tomorrow:      <span id="today"></span></h3>
+            <h3><span id="nextDate"></span>       <span id="tomorrow"></span></h3>
+            <h3><span id="followingDate"></span>         <span id="aftermorrow"></span></h3>
         </section>
+        <div id="cards"></div>
     </main>
     <footer>
         <div id="contact">

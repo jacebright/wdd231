@@ -59,7 +59,7 @@ a:hover {
     text-decoration-color: var(--border);
 }
 
-ul.navigation li a {
+ul.navigation li a, #call {
     display: block;
     padding: .75rem 2vw;
     color: var(--font);
@@ -137,12 +137,6 @@ p {
     font-family: var(--paragraph-font);
 }
 
-#hero {
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
-    max-width: 100%;
-}
 
 .card {
     margin: 20px;
@@ -232,6 +226,59 @@ footer div {
 div a img{
     /* ensure even spacing without vertical axis spacing */
     padding: 0 1rem;
+}
+
+/* Home page specific CSS */
+#homeMain {
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#hero {
+    margin: auto;
+    max-width: 95%;
+    grid-column: 1 / -1;
+}
+
+#hero img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#call {
+    background-color: white;
+    color: var(--fire-engine-red);
+    border: solid;
+    width: 132px;
+    border-radius: 25px;
+    height: 44px;
+    text-align: center;
+    padding: 20px 10px;
+    line-height: 44px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+#call:hover {
+    border-color: white;
+    background-color: var(--fire-engine-red);
+    color: white;
+}
+
+#currentEvents ul {
+    list-style: none;
+    padding: 5px;
+}
+
+#currentEvents ul li {
+    padding: 5px;
+}
+
+
+#homeMain div {
+    grid-column: 1 / -1;
 }
 
 @media (min-width: 550px) {
