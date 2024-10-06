@@ -9,15 +9,20 @@ async function getBusinessData(url) {
     const businesses = data.businesses;
     const filteredBus = businesses.filter(business => business.membership >= 2);
     let randBus = []
+
+
     let randI = Math.floor(Math.random() * filteredBus.length);
     randBus.push(filteredBus[randI]);
     delete filteredBus[randI];
+
     randI = Math.floor(Math.random() * filteredBus.length);
     randBus.push(filteredBus[randI]);
     delete filteredBus[randI];
+
     randI = Math.floor(Math.random() * filteredBus.length);
     randBus.push(filteredBus[randI]);
     delete filteredBus[randI];
+    
     displayBusinessesGrid(randBus);
     
 }
