@@ -281,6 +281,209 @@ div a img{
     grid-column: 1 / -1;
 }
 
+/* Join page specific delcarations */
+
+form {
+    margin: auto;
+    max-width: 350px;
+    padding: 15px;
+    border: 2px solid var(--fire-engine-red);
+    background-color: var(--cadet-gray);
+    border-radius: 25px 25px;
+    color: black;
+
+    label {
+      display: block;
+      font-size: .8rem;
+      color: var(--font);
+      padding-top: .2rem;
+    }
+    h3 {
+      font-size: .9rem;
+      color: var(--font);
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
+    }
+  
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 250px;
+      appearance: none;
+    }
+  
+    input:required {border-left-color: #d70000;}
+    input:focus {border-left-color: black; outline:none;}
+    input:required:valid{border-left-color: green;}
+  
+    input[type=submit] {
+      border: none;
+      text-align: center;
+      background-color: var(--fern-green);
+      color: white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+    }
+  }
+  input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+  }
+  
+  #results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+  }
+
+#levels {
+    min-height: 600px;
+}
+
+.memCard {
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+    color: black;
+}
+
+.memCard:hover {
+    border-width: 3px;
+}
+
+.memCard button {
+    border-radius: 25px;
+    margin: 5px;
+    background-color: var(--fern-green);
+    cursor: pointer;
+    color: white;
+}
+
+#Non-Profit {
+    background-color: rgba(255, 255, 255, .6);
+    animation-duration: 3000ms;
+    animation-name: slidein;
+}
+
+#Bronze {
+    background-color: rgba(206, 137, 70,2);
+    animation-duration: 3500ms;
+    animation-name: slidein;
+}
+
+#Silver {
+    background-color: rgba(192,192,192,1);
+    animation-duration: 4000ms;
+    animation-name: slidein;
+}
+
+#Gold {
+    background-color: rgba(255, 215, 0, 1);
+    animation-duration: 4500ms;
+    animation-name: slidein;
+}
+
+/* Styling the Dialog*/
+dialog {
+    border: 2px solid var(--fire-engine-red);
+    padding: 2em;
+    max-width: 50ch;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    border-radius: 25px 25px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+dialog ul {
+    list-style: none;
+    text-align: left;
+}
+
+dialog ul li:before {
+    color: #000;
+    content: "\27bd \0020";
+}
+
+::backdrop {
+    background: var(--picton-blue-2);
+    opacity: .5;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  background: var(--cadet-gray);
+}
+
+dialog button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: var(--fire-engine-red);
+    border-radius: 25px 25px;
+    padding: .75em;
+    background: var(--fern-green);
+    color: white;
+  }
+
+/* CSS Animation */
+#stockyards {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    75% {
+        opacity: 90%;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+    
+  }
+
+#results {
+    background-color: var(--cadet-gray);
+    padding: 15px;
+}
+
+#results p {
+    padding: 5px;
+}
+
 @media (min-width: 550px) {
 
     .navigation,
@@ -314,5 +517,10 @@ div a img{
     footer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    #joinMain {
+        display: grid;
+        grid-template-columns: 350px auto;
     }
 }

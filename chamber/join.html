@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jace Bright">
+    <meta name="description" content="Join page for the chamber of commerce project for WDD231, demonstrating web frontend development skills.">
+    <title>Miami Chamber of Commerce Join Page | WDD231 Jace Bright</title>
+    <link rel="icon" href="images/cactus.ico">
+
+    <!-- links -->
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/join.js" type="module"></script>
+    <script src="scripts/membership.js" defer></script>
+
+    <!-- Open Graph meta data -->
+    <meta property="og:title" content="WDD231 Chamber of Commerce Join Page for Jace Bright">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/mesa-2019/images/Things-to-Do/_1200x630_crop_center-center_82_none/Goldfield-2.jpg?v=1698437029">
+    <meta property="og:url" content="https://jacebright.github.io/wdd231/chamber/index.html">
+    <meta name="og:description" content="Page for WDD 231 - Web Frontend Development I by Jace Bright. This Join page contains the information for joining the Chamber of Commerce website project." />
+
+    <!-- Twitter meta data -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="WDD231 Chamber of Commerce Directory Page for Jace Bright" />
+    <meta name="twitter:image" content="https://s3.us-west-1.amazonaws.com/mesa-2019/images/Things-to-Do/_1200x630_crop_center-center_82_none/Goldfield-2.jpg?v=1698437029" />
+    <meta name="twitter:description" content="Page for WDD 231 - Web Frontend Development I by Jace Bright. This Join page contains the information for joining the Chamber of Commerce website project." />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/miami-logo.webp" width="100" alt="Miami, AZ Town Logo">
+        <h1>Miami, AZ Chamber of Commerce</h1>
+        <button id="myButton" aria-label="Hamburger Menu"></button>
+    </header>
+    <nav class="animateMe">
+        <ul class="navigation mainnav">
+            <li><a href="https://jacebright.github.io/wdd231/chamber" title="Home">Home</a></li>
+            <li><a href="https://jacebright.github.io/wdd231/chamber/directory" title="Directory">Directory</a></li>
+            <li class="active"><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+    <main id="joinMain">
+        <form method="GET" action="thanks.html" class="designOne">
+                <label for="firstname">First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" id="firstname"></label>
+                <label for="lastname">Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" id="lastname"></label>
+                <label for="organization-title">Organizational Title <input type="text" name="title" autocomplete="organization-title" title="Your Organizaitonal Title" id="organization-title"></label>
+                <label for="email">Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email" id="email"></label>
+                <label for="mobile">Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" id="mobile"></label>
+                <label for="business">Business/Organization Name <input type="text" name="business-name"  required autocomplete="organization" title="Your Organizaiton's Name" id="business"></label>
+
+                
+                <h3>Select Membership Level</h3>
+                <label for="membership">
+                    <select name="membership" id="membership" required>
+                        <option value ="" disabled="true" selected>Choose... &#9662</option>
+                        <option value="Non-Profit">Non-Profit</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+
+                <h3>Business/Organization Description</h3>
+                <label for="description">
+                    <textarea id="description" name="description" title="Describe your business/organization"></textarea>
+                </label>
+                
+                <input type="hidden" id="timestamp" name="timestamp">
+                <!-- script for timestamp -->
+
+                <input type="submit" id="submit">
+          </form>
+
+          <dialog id="membershipLevels"></dialog>
+          <section id="levels"></section>
+    </main>
+    <footer>
+        <div id="contact">
+            <p><strong>Miami Chamber of Commerce</strong></p>
+            <p>500 West Sullivan Street</p>
+            <p>Miami, AZ 85539</p>
+            <p>(928) 555-MCoC (6262)</p>
+        </div>
+        <div id="socials">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook Logo" width="75" loading="lazy">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="Instagram Logo" width="75" loading="lazy">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.webp" alt="Twitter Logo" width="75" loading="lazy">
+            </a>
+        </div>
+        <div id="copyright">
+            <p>©️<span id="currentyear"></span>🌵Jace Bright🌵Texas, USA</p>
+            <p>Last Modification: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

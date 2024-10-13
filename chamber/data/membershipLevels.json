@@ -1,0 +1,24 @@
+{
+    "memberships": [
+        {
+            "name": "Non-Profit",
+            "cost": "Free",
+            "benefits": ["Community of Support", "Monthly Newsletter", "Displayed in Chamber Directory"]
+        },
+        {
+            "name": "Bronze",
+            "cost": "$250/Year",
+            "benefits": ["All Benefits of Non-Profit", "5% Discount for Events", "Welcome Kit"]
+        },
+        {
+            "name": "Silver",
+            "cost": "$750/Year",
+            "benefits": ["All Benefits of Bronze ", "10% Discount for Events", "Spotlight on Home Page", "Semi-Annual Conference"]
+        },
+        {
+            "name": "Gold",
+            "cost": "$1000/Year",
+            "benefits": ["All Benefits of Silver", "Exclusive Event Inviation", "15% Discount for all Events", "Yearly Front Page Advertisement"]
+        }
+    ]
+}

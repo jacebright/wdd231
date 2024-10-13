@@ -137,8 +137,52 @@ function displayCard(coursesfiltered) {
 
         credits += course.credits;
 
+        courseCard.addEventListener("click", () => {
+            displayModal(course);
+        })
+
     // Display the total credits
     document.getElementById("credits").innerHTML = `Total Credits: ${credits}`;
 });
 }
 
+const modal = document.querySelector("#courseDialog");
+
+
+function displayModal(course) {
+    const button = document.createElement("button");
+    button.classList.add("close-button");
+    button.textContent = "Close";
+
+
+    const modal = document.querySelector("#courseDialog");
+
+    button.addEventListener("click", () => {
+        modal.close();
+    });
+
+    modal.innerHTML = "";
+
+    const subject = document.createElement("h2")
+    subject.innerHTML = `${course.subject}${course.number}`;
+    const title = document.createElement("h3");
+    title.innerHTML = course.title;
+    const credits = document.createElement("p");
+    credits.innerHTML = `${course.credits} credits`;
+    const description = document.createElement("p");
+    description.innerHTML = course.description;
+    const certificate = document.createElement("p");
+    certificate.innerHTML = `Certificate: ${course.certificate}`;
+    const technology = document.createElement("p");
+    technology.innerHTML = course.technology.join(', ');
+
+    modal.appendChild(subject);
+    modal.appendChild(title);
+    modal.appendChild(credits);
+    modal.appendChild(description);
+    modal.appendChild(certificate);
+    modal.appendChild(technology);
+    modal.appendChild(button);
+
+    modal.showModal();
+}
