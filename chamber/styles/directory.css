@@ -449,10 +449,6 @@ dialog button {
   }
 
 /* CSS Animation */
-#stockyards {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
 
   @keyframes slidein {
     from {
