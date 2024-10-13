@@ -291,25 +291,26 @@ form {
     background-color: var(--cadet-gray);
     border-radius: 25px 25px;
     color: black;
+}
 
-    label {
+form label {
       display: block;
       font-size: .8rem;
       color: var(--font);
       padding-top: .2rem;
     }
-    h3 {
+form h3 {
       font-size: .9rem;
       color: var(--font);
       margin: 1.5rem 0 .2rem 0;
       border-bottom: 1px solid #eee;
     }
   
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select {
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select {
       display: block;
       margin: .1rem 0 1rem 0 ;
       padding: .3rem;
@@ -323,11 +324,11 @@ form {
       appearance: none;
     }
   
-    input:required {border-left-color: #d70000;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+form input:required {border-left-color: #d70000;}
+form input:focus {border-left-color: black; outline:none;}
+form input:required:valid{border-left-color: green;}
   
-    input[type=submit] {
+form input[type=submit] {
       border: none;
       text-align: center;
       background-color: var(--fern-green);
@@ -340,12 +341,12 @@ form {
       appearance: none;
       cursor: pointer;
     }
-  }
-  input:-webkit-autofill{
+
+input:-webkit-autofill{
     -webkit-text-fill-color: #3D405B;
   }
   
-  #results {
+#results {
     background-color: #F4F1DE;
     padding: 0 1rem;
     border: 1px solid #E07A5F;
