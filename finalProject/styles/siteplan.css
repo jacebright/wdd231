@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC&family=Poppins&display=swap');
+:root {
+    /* CSS HEX */
+    --steel-blue: rgb(63, 136, 197);
+    --Keppel: rgb(68, 187, 164);
+    --cinnabar: rgb(233, 79, 55);
+    --onyx: rgb(57, 62, 65);
+    --ivory: rgb(246, 247, 235);
+
+    --font: var(--ivory);
+    --header-background: var(--cinnabar);
+    --card-background: var(--steel-blue);
+    --background: var(--Keppel);
+    --alt-font: var(--onyx);
+
+
+    --header-font: 'Poppins', 'sans serif';
+    --paragraph-font: 'Alice', serif;
+    --extra-font: 'Playfair Display SC', serif;
+}
+
+* {
+    color: var(--font);
+}
+
+header {
+    padding: 15px;
+    font-family: var(--header-font);
+    background-color: var(--header-background);
+}
+
+main {
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    background-color: var(--background);
+}
+
+section {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: var(--card-background);
+}
+
+#header {
+    font-family: var(--header-font);
+}
+
+#paragraph {
+    font-family: var(--paragraph-font);
+}
+
+#subscript {
+    font-family: var(--extra-font);
+}
+
+footer {
+    padding: 15px;
+    background-color: var(--background);
+}
+
+footer p, footer span {
+    color: var(--alt-font);
+}
+
+img {
+    margin: auto;
+    min-width: 250px;
+}
+
+/* color schema card */
+
+#schema ul {
+    list-style: none;
+}
+
+#blue {
+    background-color: var(--steel-blue);
+    padding: 5px;
+}
+
+#keppel {
+    background-color: var(--Keppel);
+    padding: 5px;
+}
+
+#cinnabar {
+    background-color: var(--cinnabar);
+    padding: 5px;
+}
+
+#onyx {
+    background-color: var(--onyx);
+    padding: 5px;
+}
+
+#ivory {
+    background-color: var(--ivory);
+    padding: 5px;
+    color: var(--onyx);
+}
+
+/* Menu Styling */
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--font);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "x"
+}
+
+a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+}
+
+ul.navigation li a, #call {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--alt-font);
+    text-decoration: none;
+}
+
+nav.animateMe.open li.active a {
+    background-color: rgba(63, 136, 197, .4);
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+nav.animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.animateMe ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+nav {
+    background-color: rgba(84, 122, 46, .4);
+}

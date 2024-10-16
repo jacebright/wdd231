@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jace Bright" >
+    <meta name="description" content="SitePlan for a dictionary study website as
+    a final project for Jace Bright in the course WDD 231 - Web Frontend 
+    Development I. This page contains the site plan and wire frames for the project">
+    <title>WDD231 Course Home Page for Jace T. Bright</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/sitePlan.js" type="module"></script>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph meta data -->
+    <meta property="og:title" content="WDD231 Final Project SitePlan for Jace Bright">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.thealternativeboard.com/hs-fs/hubfs/Imported_Blog_Media/bigstock-166383731-e1512672027778-1.jpg?width=670&name=bigstock-166383731-e1512672027778-1.jpg">
+    <meta property="og:url" content="https://jacebright.github.io/wdd231/finalProject/sitePlan">
+
+    <!-- Twitter meta data -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="WDD231 Final Project SitePlan for Jace Bright" />
+    <meta name="twitter:image" content="https://www.thealternativeboard.com/hs-fs/hubfs/Imported_Blog_Media/bigstock-166383731-e1512672027778-1.jpg?width=670&name=bigstock-166383731-e1512672027778-1.jpg" />
+    <meta name="twitter:description" content="SitePlan for a dictionary study website as
+    a final project for Jace Bright in the course WDD 231 - Web Frontend 
+    Development I. This page contains the site plan and wire frames for the project" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header>
+        <h1>Define my Study</h1>
+        <p>This tool is used in defining words and finding their etymologies.</p>
+        <button id="myButton"></button>
+    </header>
+            <nav class="animateMe">
+                <ul class="navigation mainnav">
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Etymology">Etymology</a></li>
+                    <li><a href="#" title="Synonyms and Antonyms">Synonyms and Antonyms</a></li>
+                    <li class="active"><a href="#" title="SitePlan">SitePlan</a></li>
+                </ul>
+            </nav>
+    <main>
+        <dialog id="courseDialog"></dialog>
+        <div class="cards">
+            <section id="purpose" class="card">
+                <h2>Site Purpose</h2>
+                <p>An important part of study, especially in ancient texts of scripture
+                    is understanding the words written. This tool will utilize a 
+                    dictionary API to assist in finding the meaning behind words 
+                    in scripture as well as finding their etymologies, synonyms, 
+                    and antonyms.
+                </p>
+            </section>
+            <section id="scenarios" class="card">
+                <h2>Scenarios</h2>
+                <ul>
+                    <li>Studying in Alma 7 and desiring to better understand the word "succor"</li>
+                    <li>In Conference and a speaker uses an unknown word</li>
+                    <li>Studying about Christ's Atonement, and you want to know where the word comes from</li>
+                </ul>
+            </section>
+            <section id="schema" class="card">
+                <h2>Color Schema</h2>
+                <ul class="colors">
+                    <li id="blue">rgb(63, 136, 197)</li>
+                    <li id="ivory">rgb(246, 247, 235)</li>
+                    <li id="keppel">rgb(68, 187, 164)</li>
+                    <li id="onyx">rgb(57, 62, 65)</li>
+                    <li id="cinnabar">rgb(233, 79, 55)</li>
+                </ul>
+            </section>
+            <section id="typography" class="card">
+                <h2>Typography</h2>
+                <ul>
+                    <li id="header">Header elements</li>
+                    <li id="paragraph">Paragraph text</li>
+                    <li id="subscript">Special Text</li>
+                </ul>
+            </section>
+            <section id="wireframe" class="card">
+                <h2>Wireframe</h2>
+                <img src="images/desktopWireframe.png" alt="wireframe outline for desktop website">
+                <img src="images/mobileWireframe.png" alt="wireframe outline for mobile website">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>♟️Jace Bright♟️Texas, USA</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
