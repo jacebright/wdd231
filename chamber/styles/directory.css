@@ -452,8 +452,7 @@ dialog button {
 
   @keyframes slidein {
     from {
-        translate: 150vw 0;
-        scale: 200% 1;
+        transform: translate(150vw);
         opacity: 0;
     }
 
@@ -466,8 +465,7 @@ dialog button {
     }
 
     to {
-        translate: 0 0;
-        scale: 100% 1;
+        transform: translate(0);
     }
     
   }
