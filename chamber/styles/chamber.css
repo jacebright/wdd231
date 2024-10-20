@@ -503,9 +503,14 @@ figure {
     opacity: 0;
 }
 
-#discoverLocations figure img {
+#discoverLocations figure img, .card img {
     max-width: 80%;
     border-radius: 25px;
+}
+
+iframe {
+    max-width:100%;
+    height:auto;
 }
 
 @media (min-width: 550px) {
