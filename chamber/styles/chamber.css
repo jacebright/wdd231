@@ -479,6 +479,35 @@ dialog button {
     padding: 5px;
 }
 
+/* discover specific css */
+figure {
+    background: rgba(84, 122, 46, .6);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 80%;
+}
+
+#visit {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    background-color: rgb(152, 166, 166);
+    padding: .75rem;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.close {
+    opacity: 0;
+}
+
+#discoverLocations figure img {
+    max-width: 80%;
+    border-radius: 25px;
+}
+
 @media (min-width: 550px) {
 
     .navigation,
@@ -514,8 +543,16 @@ dialog button {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
-    #joinMain {
+    #joinMain, #discoverMain {
         display: grid;
         grid-template-columns: 350px auto;
+    }
+
+    #discoverLocations figure img {
+        opacity: .7;
+    }
+
+    #discoverLocations figure img:hover {
+        opacity: 1;
     }
 }
