@@ -7,8 +7,6 @@ function displayMessage() {
     let message = "";
     const secDay = 86400000;
 
-    console.log(lastVisit);
-    console.log(now);
 
     if (lastVisit !== null) {
         const diff = now - lastVisit;
@@ -23,7 +21,6 @@ function displayMessage() {
         else {
             message = `You last visited ${Math.floor(days)} days ago.`;
         }
-        console.log(days);
     }
     else {
         message = `Welcome! Let us know if you have any questions.`
