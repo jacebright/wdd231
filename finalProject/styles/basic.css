@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC&family=Poppins&display=swap');
+:root {
+    /* CSS HEX */
+    --steel-blue: rgb(63, 136, 197);
+    --Keppel: rgb(68, 187, 164);
+    --cinnabar: rgb(233, 79, 55);
+    --onyx: rgb(57, 62, 65);
+    --ivory: rgb(246, 247, 235);
+
+    --font: var(--ivory);
+    --header-background: var(--cinnabar);
+    --card-background: var(--steel-blue);
+    --background: var(--Keppel);
+    --alt-font: var(--onyx);
+
+
+    --header-font: 'Poppins', 'sans serif';
+    --paragraph-font: 'Alice', serif;
+    --extra-font: 'Playfair Display SC', serif;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto 44px;
+    text-align: center;
+    align-items: end;
+}
+
+header img {
+    margin: auto;
+}
+
+header, footer {
+    background-color: rgba(233, 79, 55, .6);
+    color: var(--fire-engine-red);
+    padding: 1rem;
+}
+
+/* Menu Styling */
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--font);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "x"
+}
+
+a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+}
+
+ul.navigation li a, #call {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--font);
+    text-decoration: none;
+}
+
+nav.animateMe.open li.active a {
+    background-color: rgba(63, 136, 197, .2);
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+nav.animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.animateMe ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+nav {
+    background-color: rgba(63, 136, 197, .4);
+}
+
+
+
+
+
+h1, h2 {
+    font-family: var(--header-font);
+}
+
+main {
+    background-color: rgba(68, 187, 164, .8);
+    color: #fff;
+    padding: 20px;
+    display: grid;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(63, 136, 197, .8);
+    border-radius: 25px 25px;
+    text-align: center;
+}
+
+.card p, .card h2 {
+    padding: 3px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: var(--heading-font);
+    color: var(--font);
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+    color: var(--font);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: rgb(152, 166, 166);
+    border: 1.5px solid var(--fire-engine-red);
+    border-radius: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+footer {
+    display: block;
+}
+
+footer div {
+    text-align: center;
+    align-content: center;
+    padding: 15px
+}
+
+
+@media (min-width: 550px) {
+
+    .navigation,
+    ul.open {
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    li.active a {
+        background-color: rgba(68, 187, 164, .2);
+    }
+
+    #myButton {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    nav.animateMe {
+        grid-template-rows: 1fr;
+    }
+
+}
