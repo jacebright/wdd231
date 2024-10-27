@@ -11,7 +11,7 @@
     <!-- links -->
      <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/basic.css">
-    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/dictionary.js" type="module"></script>
     <script src="scripts/home.js" type="module"></script>
 
     <!-- Open Graph meta data -->
@@ -46,9 +46,21 @@
         </ul>
     </nav>
     <main id="homeMain">
-
-
-        <div id="cards"></div>
+        <div id="bar">
+            <form>
+                <label for="search">What can we help you define?</label>
+                <input type="search" id="search" class="input" placeholder="repentance..."/>
+                <button id="submit" type="button">Define</button>
+            </form>
+        </div>
+        <dialog id="definition"></dialog>
+        <aside id="inspirationQuote">
+            <h2>Why do we need to study?</h2>
+            <figure><img src="images/official_portrait_russell_nelson.webp" alt="portrait of President Russell M Nelson" loading="lazy"><figcaption>President Russell M Nelson</figcaption></figure>
+            <p>"Become an engaged learner. Immerse yourself in the scriptures to understand better Christ’s mission and ministry. Know the doctrine of Christ so that you understand its power for your life. Internalize the truth that the Atonement of Jesus Christ applies to you... The more you learn about the Savior, the easier it will be to trust in His mercy, His infinite love, and His strengthening, healing, and redeeming power."</p>
+            <p><sub>Christ Is Risen; Faith in Him Will Move Mountains, April 2021</sub></p>
+        </aside>
+        <div id="definitionSample" class="cards"></div>
     </main>
     <footer>
         <div id="copyright">

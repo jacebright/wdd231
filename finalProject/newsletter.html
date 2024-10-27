@@ -11,7 +11,7 @@
     <!-- links -->
      <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/basic.css">
-    <script src="scripts/etymology.js" type="module"></script>
+    <script src="scripts/dictionary.js" type="module"></script>
     <script src="scripts/home.js" type="module"></script>
 
     <!-- Open Graph meta data -->
@@ -40,27 +40,32 @@
     </header>
     <nav class="animateMe">
         <ul class="navigation mainnav">
-            <li><a href="https://jacebright.github.io/wdd231/finalProject" title="Define">Define</a></li>
-            <li class="active"><a href="https://jacebright.github.io/wdd231/finalProject/synonyms" title="Synonyms">Synonyms & Antonyms</a></li>
+            <li class="active"><a href="https://jacebright.github.io/wdd231/finalProject" title="Define">Define</a></li>
+            <li><a href="https://jacebright.github.io/wdd231/finalProject/synonyms" title="Synonyms">Synonyms & Antonyms</a></li>
             <li><a href="https://jacebright.github.io/wdd231/finalProject/etymology" title="Etymology">Etymology</a></li>
         </ul>
     </nav>
-    <main id="etMain">
-        <div id="bar">
-            <form>
-                <label for="search">Let us find the origin for you!</label>
-                <input type="search" id="search" class="input" placeholder="repentance..."/>
-                <button id="submit" type="button">Find Origin</button>
-            </form>
-        </div>
-        <dialog id="etymology"></dialog>
-        <div id="etymologySample" class="cards"></div>
-        <aside id="inspirationQuote">
-            <h2>What benefit is an etymology?</h2>
-            <figure><img src="images/official_portrait_russell_nelson.webp" alt="portrait of President Russell M Nelson" loading="lazy"><figcaption>President Russell M Nelson</figcaption></figure>
-            <p>"The word for repentance in the Greek New Testament is metanoeo. The prefix meta- means “change.” The suffix -noeo is related to Greek words that mean “mind,” “knowledge,” “spirit,” and “breath.” Thus, when Jesus asks you and me to “repent,” He is inviting us to change our mind, our knowledge, our spirit—even the way we breathe. He"</p>
-            <p><sub>We Can Do Better and Be Better, April 2019</sub></p>
-        </aside>
+    <main id="homeMain">
+        <h2>Join our Community!</h2>
+        <p>We believe that there are many tools available to help us "know [God], and Jesus Christ, whom [He] has sent" (John17:3). We hope you'll join our newsletter to find new study techniques to enhance your relationship with God.</p>
+        <form action="thankyou.html" method="GET" class="designOne">
+            <label for="firstname">First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name" id="firstname"></label>
+            <label for="lastname">Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" id="lastname"></label>
+            <label for="email">Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email" id="email"></label>
+  
+            <h3>Select Preferred Study Help</h3>
+            <label for="methods">
+                <select name="methods" id="methods" required>
+                    <option value ="" disabled selected>Choose... &#9662;</option>
+                    <option value="Bible_Dictionary">Bible Dictionary</option>
+                    <option value="1820">1820 Dictionary</option>
+                    <option value="Topics">Topics and Questions</option>
+                    <option value="Internet">Internet</option>
+                </select>
+            </label>
+            
+            <input type="submit" id="submit">
+      </form>
     </main>
     <footer>
         <div id="copyright">

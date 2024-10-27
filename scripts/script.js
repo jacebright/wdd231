@@ -129,20 +129,11 @@ function displayCard(coursesfiltered) {
         document.getElementById("courses").appendChild(courseCard);
 
         courseCard.classList.add("course");
-        // if the course is completed, add it to a class so the CSS can display
-        // it properly
-        if (course.completed == true) {
-            courseCard.classList.add("completed");
-        }
 
-        credits += course.credits;
 
         courseCard.addEventListener("click", () => {
             displayModal(course);
         })
-
-    // Display the total credits
-    document.getElementById("credits").innerHTML = `Total Credits: ${credits}`;
 });
 }
 
