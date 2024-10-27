@@ -106,6 +106,7 @@ nav {
 
 h1, h2 {
     font-family: var(--header-font);
+    text-align: center;
 }
 
 main {
