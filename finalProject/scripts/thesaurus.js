@@ -101,7 +101,7 @@ function displayCard(words) {
     cards.innerHTML = ""
 
     const header = document.createElement("h2");
-    header.innerHTML = "Sample Etymological Origins";
+    header.innerHTML = "Sample Synonyms and Antonyms";
 
     const container = document.createElement("div");
     container.classList.add("gridCards");
