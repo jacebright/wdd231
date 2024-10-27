@@ -115,7 +115,7 @@ function displayCard(words) {
 });
 }
 
-const words = ["repentance", "succor", "faith", "authority", "charity"];
+const words = ["repentance", "succor", "faith", "authority", "charity", "hope", "remission", "penitent"];
     
 displayCard(words);
 
